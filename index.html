@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="index.js"></script>
+	<title></title>
+</head>
+<body>
+	<p>Menu</p>
+	<p>1.Thêm sinh viên</p>
+	<p>2.Xóa sinh viên</p>
+	<p>3.Sửa thông tin sinh viên</p>
+	<p>4.Show list sinh viên</p>
+	<input id="luachonText">
+	<button id="luachonbtn">Lựa chọn</button>
+	<div id="layout-thongtinsv" style="display: none">
+		<form>
+			<input id="ten" placeholder="Nhập Tên">
+		</form>
+		<form>
+			<input id="mssv" placeholder="Nhập MSSV">
+		</form>
+		<form>
+			<input id="sdt" placeholder="Nhập SĐT">
+		</form>
+		<button id="addbtn" onclick="addsv()">Add</button>				
+	</div>
+	<div id="layout-delete" style="display: none">
+		<form>
+			<input id="mssvxoa" placeholder="Nhập MSSV cần xóa">
+		</form>
+		<button id="delbtn" onclick="deletesv()">Delete</button>
+	</div>
+	<div id="layout-edit" style="display: none">
+		<form>
+			<input id="mssvedit" placeholder="Nhập MSSV">
+		</form>
+		<form>
+			<input id="sdtedit" placeholder="Nhập Sđt cần edit">
+		</form>
+		<form>
+			<input id="sdtnew" placeholder="Nhập Sđt mới">
+		</form>
+		<button id="editbtn" onclick="editsv()">Edit</button>
+	</div>
+	<p id="list"></p>
+</body>
+</html>
